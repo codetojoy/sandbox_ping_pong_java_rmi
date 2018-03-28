@@ -16,15 +16,14 @@ Example of co-dependent services in Java RMI.
     * this is a stand-alone which the services will use
 * in window 1: `gradle :PingService:run`
 * in window 2: `gradle :PongService:run`
-* in window 4: `./run_client.sh`
-* alternatively, in window 5: `gradle :Monitor:run`
-    * will ping services
+* in window 3: `./run_client.sh`
+* alternatively, in window 4: `gradle :Monitor:run`
+    * will run a health-check on services
 
 ### Commands
 
 * `i` to use PingService
-* `b` to use BillingService
-* `c` to use CompoundService
+* `o` to use PongService
 * `r` to list registry
 * `q` to quit
 

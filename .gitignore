@@ -1,3 +1,6 @@
+/tmp/
+/jars/
+/staging/
 .gradle
 /build/
 

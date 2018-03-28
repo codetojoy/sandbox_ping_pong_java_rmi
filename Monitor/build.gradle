@@ -1,0 +1,29 @@
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'net.codetojoy.monitor.Monitor'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.springframework:spring-core:4.3.10.RELEASE'
+    compile 'org.springframework:spring-beans:4.3.10.RELEASE'
+    compile 'org.springframework.integration:spring-integration-rmi:4.3.11.RELEASE'
+
+    compile project(':common')
+}
+
+project.ext.stagingDir = 'staging'
+
+installDist.doFirst {
+    ant.delete(dir: project.ext.stagingDir)
+}
+
+installDist {
+    into project.ext.stagingDir
+}
+
+

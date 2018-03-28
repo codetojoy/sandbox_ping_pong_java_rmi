@@ -31,5 +31,3 @@ Example of co-dependent services in Java RMI.
 ### Notes
 
 * `client` must be run _in situ_ because it uses `stdin`
-* both `PingService` and `PongService` append a message to a `Ball` object, and then call the other service
-* The `Ball` has a max payload, and `Ping` and `Pong` will stop when the max is reached.

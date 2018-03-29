@@ -9,6 +9,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
       lazy-init="true" >
     <property name="serviceUrl" value="rmi://localhost:2020/pingServiceEndpoint"/>
     <property name="serviceInterface" value="net.codetojoy.common.PingService"/>
+    <property name="refreshStubOnConnectFailure" value="true" />
 </bean>
 
 <bean id="pongService" 
@@ -16,6 +17,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
       lazy-init="true" >
     <property name="serviceUrl" value="rmi://localhost:2020/pongServiceEndpoint"/>
     <property name="serviceInterface" value="net.codetojoy.common.PongService"/>
+    <property name="refreshStubOnConnectFailure" value="true" />
 </bean>
 
 </beans>

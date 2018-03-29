@@ -38,7 +38,7 @@ public class Client {
             String name = prompt.getInput("enter a name: "); 
             Ball ball = new Ball(name);
             ball = getPingService().ping(ball);
-            System.out.println("result: \n" + ball.toString());
+            System.out.println("\nOK! result: \n\n" + ball.toString());
         } else if (input.equalsIgnoreCase(PONG)) {
             String name = prompt.getInput("enter a name: "); 
             Ball ball = new Ball(name);

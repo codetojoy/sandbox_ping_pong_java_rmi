@@ -56,7 +56,7 @@ public class PongServiceImpl implements PongService, ApplicationContextAware {
         Ball result = ball;
 
         if (! ball.isMaxedOut()) {
-            String message = "PONG #: " + (ball.getNumHits() + 1);
+            String message = "     #: " + (ball.getNumHits() + 1) + " PONG";
             System.out.println("TRACER " + message);
 
             Ball newBall = ball.hit(message);
